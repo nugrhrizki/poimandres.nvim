@@ -14,7 +14,7 @@ function M.get(config)
     float_background = (config.disable_float_background and p.none) or groups.panel,
   }
   styles.nc_background = (config.dim_nc_background and not config.disable_background and groups.panel)
-      or styles.background
+    or styles.background
 
   theme = {
     ColorColumn = { bg = p.blueGray1 },
@@ -43,7 +43,7 @@ function M.get(config)
     Folded = { fg = p.text, bg = groups.panel },
     IncSearch = { fg = p.background3, bg = p.blue2 },
     LineNr = { fg = p.blueGray3 },
-    MatchParen = { bg = p.blueGray3, fg = p.background3 },
+    MatchParen = { fg = p.yellow },
     ModeMsg = { fg = p.blue3 },
     MoreMsg = { fg = p.blue3 },
     NonText = { fg = p.blue4 },
@@ -97,7 +97,7 @@ function M.get(config)
     Float = { fg = p.teal1 }, --    a floating point constant: 2.3e10
 
     Identifier = { fg = p.blueGray1 }, -- (preferred) any variable name
-    Function = { fg = p.teal1 }, -- function name (also: methods for classes)
+    Function = { fg = p.blueGray1 }, -- function name (also: methods for classes)
 
     Statement = { fg = p.text }, -- (preferred) any statement
     Conditional = { fg = p.blue3 }, --  if, then, else, endif, switch, etc.
@@ -105,7 +105,7 @@ function M.get(config)
     Label = { fg = p.text }, --    case, default, etc.
     Operator = { fg = p.blue2 }, -- "sizeof", "+", "*", etc.
     Keyword = { fg = p.blue2 }, --  any other keyword
-    Exception = { fg = p.blue3 }, --  try, catch, throw
+    Exception = { fg = p.pink3 }, --  try, catch, throw
 
     PreProc = { fg = p.text }, -- (preferred) generic Preprocessor
     -- Include       = { }, --  preprocessor #include
@@ -113,7 +113,7 @@ function M.get(config)
     -- Macro         = { }, --    same as Define
     -- PreCondit     = { }, --  preprocessor #if, #else, #endif, etc.
 
-    Type = { fg = p.blueGray1 }, -- (preferred) int, long, char, etc.
+    Type = { fg = p.blueGray2 }, -- (preferred) int, long, char, etc.
     --[[ Structure = { fg = p.blueGray1 }, --  struct, union, enum, etc. ]]
     -- StorageClass  = { }, -- static, register, volatile, etc.
     -- Typedef = { fg = p.blueGray1 }, --  A typedef
@@ -125,7 +125,7 @@ function M.get(config)
     SpecialComment = { fg = p.blueGray1 }, -- special things inside a comment
     -- Debug         = { }, --    debugging statements
 
-    Comment = { fg = p.blueGray1 }, -- (preferred) any special symbol
+    Comment = { fg = p.blueGray1, style = styles.italic }, -- (preferred) any special symbol
 
     Underlined = { style = 'underline' }, -- (preferred) text that stands out, HTML links
     Bold = { style = 'bold' },
@@ -192,7 +192,7 @@ function M.get(config)
 
     TSVariable = { fg = p.text },
     -- TSAttribute = {},
-    -- TSKeywordReturn = { fg = p.teal2 },
+    TSKeywordReturn = { fg = p.teal2 },
     TSBoolean = { link = 'Boolean' },
     -- TSCharacter = { link = 'Character' },
     TSComment = { link = 'Comment' },
@@ -200,8 +200,8 @@ function M.get(config)
     TSVariableBuiltin = { fg = p.blue2 },
     TSConstBuiltin = { fg = p.blue2 },
     -- TSConstMacro = {},
-    -- TSConstant = { fg = p.text },
-    TSConstructor = { fg = p.teal1 },
+    TSConstant = { fg = p.text },
+    TSConstructor = { fg = p.blueGray1 },
     -- TSEmphasis = {},
     -- TSError = {},
     -- TSException = {},
@@ -210,20 +210,20 @@ function M.get(config)
     TSFuncBuiltin = { fg = p.blue2 },
     -- TSFuncMacro = {},
     TSFunction = { link = 'Function' },
-    TSInclude = { fg = p.blue2 },
-    TSKeyword = { fg = p.blue2 },
+    TSInclude = { fg = p.teal1 },
+    TSKeyword = { fg = p.blue3 },
     TSKeywordFunction = { fg = p.blue2 },
     TSKeywordOperator = { fg = p.teal1 },
     TSLabel = { fg = p.blue3 },
     -- TSLiteral = {},
-    TSMethod = { fg = p.teal1 },
+    TSMethod = { fg = p.blue2 },
     -- TSNamespace = {},
     -- TSNone = {},
     -- TSNumber = { link = 'Number' },
     TSOperator = { link = 'Operator' },
     TSParameter = { fg = p.text },
     -- TSParameterReference = {},
-    TSProperty = { fg = p.text },
+    TSProperty = { fg = p.blue2 },
     TSPunctBracket = { fg = groups.punctuation },
     TSPunctDelimiter = { fg = groups.punctuation },
     TSPunctSpecial = { fg = groups.punctuation },
@@ -234,7 +234,7 @@ function M.get(config)
     -- TSStringRegex = {},
     -- TSStringSpecial = { fg = p.teal1 },
     -- TSSymbol = {},
-    TSTag = { fg = p.text },
+    TSTag = { fg = p.teal1 },
     TSTagDelimiter = { fg = p.text },
     TSTagAttribute = { fg = p.blue2, style = styles.italic },
     TSText = { fg = p.text },

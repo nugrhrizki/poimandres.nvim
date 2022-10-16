@@ -21,6 +21,12 @@ local variants = {
     text = '#E4F0FB',
     white = '#FFFFFF',
     none = 'NONE',
+    darkerGray = '#868cad',
+    bluishGray = '#607487',
+    focus = '#404350',
+    bg = '#252b37',
+    selection = '#818cc425',
+    black = '#101010',
   },
 }
 
