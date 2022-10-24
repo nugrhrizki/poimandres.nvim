@@ -121,11 +121,11 @@ function M.get(config)
     Special = { fg = p.blueGray2 }, -- (preferred) any special symbol
     -- SpecialChar   = { }, --  special character in a constant
     Tag = { fg = p.text }, --    you can use CTRL-] on this
-    Delimiter = { fg = p.blueGray1 }, --  character that needs attention
+    Delimiter = { fg = p.blueGray2 }, --  character that needs attention
     SpecialComment = { fg = p.blueGray1 }, -- special things inside a comment
     -- Debug         = { }, --    debugging statements
 
-    Comment = { fg = p.blueGray1, style = styles.italic }, -- (preferred) any special symbol
+    Comment = { fg = p.blueGray2, style = styles.italic }, -- (preferred) any special symbol
 
     Underlined = { style = 'underline' }, -- (preferred) text that stands out, HTML links
     Bold = { style = 'bold' },
