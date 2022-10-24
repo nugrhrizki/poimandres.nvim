@@ -414,6 +414,9 @@ function M.get(config)
     NotifyERRORBorder = { fg = p.pink3 },
     NotifyERRORTitle = { link = 'NotifyERRORBorder' },
     NotifyERRORIcon = { link = 'NotifyERRORBorder' },
+
+    -- copilot
+    CopilotSuggestion = { fg = p.blueGray2 },
   }
 
   vim.g.terminal_color_0 = p.background3 -- black
