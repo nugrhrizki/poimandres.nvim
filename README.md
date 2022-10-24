@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/47901349/182481495-06f11e94-8d8a-4580-b869-56b6defae182.png" width="100px">      
+  <img src="https://user-images.githubusercontent.com/47901349/182481495-06f11e94-8d8a-4580-b869-56b6defae182.png" width="100px">
   <h1>poimandres.nvim</h1>
 </div>
 
@@ -9,7 +9,7 @@
   </a>
 </p>
 
-Neovim theme based on the [poimandres vscode theme](https://github.com/drcmda/poimandres-theme), written in Lua with treesitter support. 
+Neovim theme based on the [poimandres vscode theme](https://github.com/drcmda/poimandres-theme), written in Lua with treesitter support.
 
 All variants of the theme will be available for use.
 
@@ -53,7 +53,7 @@ Install with [packer](https://github.com/wbthomason/packer.nvim):
 ```lua
 -- Lua
 
-use { 
+use {
   'olivercederborg/poimandres.nvim',
   config = function()
     require('poimandres').setup {
@@ -98,7 +98,7 @@ colorscheme poimandres
 
 ## ⚙️ Configuration:
 
-**Setup function options**: 
+**Setup function options**:
 
 ```lua
 require('poimandres').setup {
@@ -143,3 +143,5 @@ Feel free to help improving the color scheme by opening issues and PRs with feat
 ```bash
 hyper i hyper-pmndrs
 ```
+
+### Contributions
